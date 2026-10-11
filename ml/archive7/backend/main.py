@@ -55,13 +55,13 @@ class AccountRequest(BaseModel):
 
 
 
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://ai-food-calorie-estimation-gowv.vercel.app",
         "https://ai-food-calorie-estimation-gowv-qbamo03cu-food26.vercel.app",
     ],
-    allow_credentials=True,
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
