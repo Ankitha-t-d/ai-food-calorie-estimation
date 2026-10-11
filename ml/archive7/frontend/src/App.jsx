@@ -62,9 +62,11 @@ function App() {
 
     try {
 
+      const API_URL = "https://ai-food-calorie-estimation.onrender.com";
+
       const endpoint = isRegister
-        ? "http://127.0.0.1:8000/signup"
-        : "http://127.0.0.1:8000/login";
+         ? `${API_URL}/signup`
+        : `${API_URL}/login`;
 
       const response = await fetch(
         endpoint,
